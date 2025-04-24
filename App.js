@@ -22,13 +22,19 @@ export default function App() {
       setClassificacao("Abaixo do peso");
     }
     else if (resultado >= 18.5 && resultado <= 24.9) {
-      setClassificacao("Peso saudável")
+      setClassificacao("Peso normal")
     }
     else if (resultado >= 25 && resultado <=29.9){
       setClassificacao("Sobrepeso")
     }
+    else if (resultado >= 30 && resultado <= 34.9) {
+      setClassificacao("Obesidade grau 1")
+    }
+    else if (resultado >= 35 && resultado <= 39.9){
+      setClassificacao("Obesidade grau 2")
+    }
     else {
-      setClassificacao("Obesidade")
+      setClassificacao("Obesidade grau 3")
     }
     
   }
